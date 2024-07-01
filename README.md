@@ -1,7 +1,7 @@
 # <b>CRUD DE VENDAS | HCOSTA
 
-### CRUD de vendas fieto para o teste de Júnior para a HCOSTA.<br>
-#### No Projeto foi desenvolvido uma tela de cadastro, tela de login, e uma opção para o ADM editar usuário, tanto nome como email e alterar para VENDEDOR.<br><br>Foi utilizado API REST para consumir os dados de produtos.
+### CRUD de vendas feito para o teste de Júnior para a HCOSTA.<br>
+#### No Projeto foi desenvolvido uma tela de cadastro, tela de login, e uma opção para o ADM editar usuário, tanto nome como email e alterar para VENDEDOR.<br><br>Foi utilizado API para consumir os dados de produtos.
 
 ## <b>FLUXO DE USO
 #### <li> Realizar o cadastro - Permitido somente um e-mail por cadastro.
