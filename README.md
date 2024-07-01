@@ -10,13 +10,13 @@
 #### <li> VENDEDOR pode alterar todos os dados da compra, tanto PENDENTE como PAGO e CANCELADO.
 
 ## <b>CONFIGURAÇÃO
-#### 1. RODAR O COMANDO docker run --rm -u "$(id -u):$(id -g)" -v "$(pwd):/var/www/html" -w /var/www/html laravelsail/php83-composer:latest composer install --ignore-platform-reqs para instalar as dependências do projeto.<BR>
-#### 2. Configurar o .env, campo <b>API_URL, recebendo o valor http://host.docker.internal + porta da API + /</b> <br>Exemplo: http://host.docker.internal:0000/<BR>
-#### 3.<B> RODAS OS COMANDO:
-<li> NPM INSTALL
-<li> NPM RUN BUILD
+#### 1. RODAR O COMANDO: <br>docker run --rm -u "$(id -u):$(id -g)" -v "$(pwd):/var/www/html" -w /var/www/html laravelsail/php83-composer:latest composer install --ignore-platform-reqs<br> para instalar as dependências do projeto.<BR>
+#### 2. Configurar o .env, campo <b>API_URL</b>, recebendo o valor http://host.docker.internal + porta da API + / <br>Exemplo: http://host.docker.internal:0000/<BR>Campo<b> APP_PORT</b>, definir uma porta para rodar a aplicação
+#### 3.<B> RODAR OS COMANDO:
+<li> sail npm install
+<li> sail npm run build
 
-#### Opcional : alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)' para sintetizar o comando ./vendor/bin/sail para apenas sail.
+#### Opcional : alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'<br> para sintetizar o comando ./vendor/bin/sail para apenas sail.
 
 #### 4.  <b>sail up -d</b> para subir o container do projeto.
 
